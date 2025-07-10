@@ -1,0 +1,56 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String?  @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  files     File[]
+
+  @@map("users")
+}
+
+model File {
+  id               String      @id @default(cuid())
+  originalName     String
+  originalSize     Int
+  compressedSize   Int?
+  fileType         FileType
+  format           String
+  compressionLevel String
+  status           FileStatus  @default(PENDING)
+  originalUrl      String?
+  compressedUrl    String?
+  userId           String?
+  user             User?       @relation(fields: [userId], references: [id])
+  createdAt        DateTime    @default(now())
+  updatedAt        DateTime    @updatedAt
+  compressedData   Bytes?
+
+  @@map("files")
+}
+
+enum FileType {
+  IMAGE
+  DOCUMENT
+  VIDEO
+  AUDIO
+  ARCHIVE
+}
+
+enum FileStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+}
