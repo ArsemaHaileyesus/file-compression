@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: "FileCompress",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://file-compresser.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "FileCompress - File Compression Tool",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "FileCompress - Advanced File Compression Tool",
     description:
       "Compress images, documents, videos, and audio files with our advanced compression algorithms.",
-    images: ["/og-image.png"],
+    images: ["https://file-compresser.vercel.app/og-image.png"],
     creator: "Arsema & Eleni",
   },
   robots: {
@@ -81,6 +81,25 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
+
+        {/* Open Graph for Telegram */}
+        <meta property="og:title" content="FileCompress - Advanced File Compression Tool" />
+        <meta
+          property="og:description"
+          content="Compress images, documents, videos, and audio files with our advanced compression algorithms. Reduce file sizes while maintaining quality."
+        />
+        <meta property="og:image" content="https://file-compresser.vercel.app/og-image.png" />
+        <meta property="og:url" content="https://file-compresser.vercel.app/" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="FileCompress - Advanced File Compression Tool" />
+        <meta
+          name="twitter:description"
+          content="Compress images, documents, videos, and audio files with our advanced compression algorithms."
+        />
+        <meta name="twitter:image" content="https://file-compresser.vercel.app/og-image.png" />
       </Head>
       <body className={inter.className}>
         <ThemeProvider
