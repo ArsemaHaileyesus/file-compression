@@ -152,7 +152,7 @@ export function CompressionInterface() {
                   Compressing...
                 </>
               ) : (
-                "Compress Files"
+                "Compress"
               )}
             </Button>
             <Button
