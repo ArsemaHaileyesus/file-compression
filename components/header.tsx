@@ -38,7 +38,7 @@ export function Header() {
             <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary">
               <Zap className="h-5 w-5 text-primary-foreground" />
             </div>
-            <span className="font-bold text-xl">FileCompress Pro</span>
+            <span className="font-bold text-xl">FileCompress </span>
           </Link>
 
           {/* Desktop Navigation */}
