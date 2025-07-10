@@ -17,7 +17,7 @@ import {
 import { AdsSection } from "@/components/ads-section";
 
 export const metadata: Metadata = {
-  title: "FileCompress Pro",
+  title: "FileCompress",
   description:
     "Free online file compression tool. Compress images, documents, videos, and audio files instantly with advanced algorithms.",
 };
