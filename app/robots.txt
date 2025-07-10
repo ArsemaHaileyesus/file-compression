@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://filecompress-pro.vercel.app/sitemap.xml
+Sitemap: https://file-compresser.vercel.app/sitemap.xml
