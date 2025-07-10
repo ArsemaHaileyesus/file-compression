@@ -10,35 +10,35 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "FileCompress Pro - Advanced File Compression Tool",
+  title: "FileCompress - Advanced File Compression Tool",
   description:
     "Compress images, documents, videos, and audio files with our advanced compression algorithms. Reduce file sizes while maintaining quality.",
   keywords:
     "file compression, image compression, document compression, video compression, audio compression, file optimizer, reduce file size",
-  authors: [{ name: "FileCompress Pro Team" }],
-  creator: "FileCompress Pro",
-  publisher: "FileCompress Pro",
+  authors: [{ name: "Arsema & Eleni in collaboration with Zemenay Community" }],
+  creator: "Arsema & Eleni",
+  publisher: "Arsema & Eleni",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://filecompress-pro.vercel.app"),
+  metadataBase: new URL("https://file-compresser.vercel.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "FileCompress Pro - Advanced File Compression Tool",
+    title: "FileCompress - Advanced File Compression Tool",
     description:
       "Compress images, documents, videos, and audio files with our advanced compression algorithms. Reduce file sizes while maintaining quality.",
-    url: "https://filecompress-pro.vercel.app",
-    siteName: "FileCompress Pro",
+    url: "https://file-compresser.vercel.app/",
+    siteName: "FileCompress",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "FileCompress Pro - File Compression Tool",
+        alt: "FileCompress - File Compression Tool",
       },
     ],
     locale: "en_US",
@@ -46,11 +46,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FileCompress Pro - Advanced File Compression Tool",
+    title: "FileCompress - Advanced File Compression Tool",
     description:
       "Compress images, documents, videos, and audio files with our advanced compression algorithms.",
     images: ["/og-image.png"],
-    creator: "@filecompresspro",
+    creator: "Arsema & Eleni",
   },
   robots: {
     index: true,
