@@ -12,7 +12,7 @@ export function Footer() {
           <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary">
             <Zap className="h-5 w-5 text-primary-foreground" />
           </div>
-          <span className="font-bold text-xl">FileCompress Pro</span>
+          <span className="font-bold text-xl">FileCompress </span>
         </div>
         <p className="text-sm text-muted-foreground text-center max-w-md">
           Advanced file compression tool for professionals and individuals.
@@ -44,7 +44,7 @@ export function Footer() {
           </Button>
         </div>
         <div className="border-t w-full mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 FileCompress Pro. All rights reserved.</p>
+          <p>&copy; 2025 FileCompress . All rights reserved.</p>
         </div>
       </div>
     </footer>
